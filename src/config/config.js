@@ -5,4 +5,7 @@ dotenv.config({
         process.env.NODE_ENV = '.env'
 })
 
-export const PORT = process.env.PORT || 3000
+export const PORT = process.env.PORT
+
+export const email = process.env.EMAIL;
+export const password = process.env.PASSWORD;
