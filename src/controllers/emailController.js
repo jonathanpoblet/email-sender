@@ -13,7 +13,7 @@ export async function controllerPostEmail(req, res) {
       subject: 'Taraborelli Automobile nueva consulta',
       html: `<p>Nombre: ${contact.name}</p><p>Email: ${contact.email}</p><div><p>Telefono: ${contact.tel}</p><p>Modelo buscando: ${contact.model}</p><br><p>Sucursal: ${contact.office}</p></div>`
     })
-    res.json({ succesfull: "Email send" });
+    res.json({ successful: "Email send" });
   } 
   else res.status(400).json({error: 'Faltan datos de envio'});
 }
